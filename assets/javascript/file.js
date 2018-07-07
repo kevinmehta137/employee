@@ -17,7 +17,7 @@
 
   $("#submit").on("click", function(event) {
     event.preventDefault();
-    debugger;
+    
     // Get the input values
     var Ename = $("#name").val().trim();
     var Role = $("#role").val().trim();
@@ -33,6 +33,8 @@
     
   });
   database.ref().on("child_added", function(snapshot){
-    debugger
+    debugger;
   });
+
+
 
