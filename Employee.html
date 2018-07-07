@@ -4,6 +4,7 @@
 <head></head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="./assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
 <div class="datatool jumbotron" style="background-color:black; color: white;">
       <div class="head">
@@ -16,17 +17,21 @@
             <div class="panel-heading">Add Employee</div> <br>
             <div class="form-group">
               <label for="name">Employee Name</label>
-              <input type="name" class="form-control" id="name" placeholder="Jane Doe">
+              <input type="text" class="form-control" id="name" placeholder="Jane Doe">
             </div>
             <div class="form-group">
                 <label for="role">Role</label>
-                <input type="role" class="form-control" id="role" placeholder="CEO">
+                <input type="text" class="form-control" id="role"  placeholder="CEO">
+              </div>
+              <div class="form-group">
+                <label for="Date">date</label>
+                <input type="text" class="form-control" id="date" placeholder="MM/DD/YYYY">
               </div>
               <div class="form-group">
                 <label for="rate">Monthly Rate</label>
-                <input type="rate" class="form-control" id="rate" placeholder="200000">
+                <input type="text" class="form-control" id="rate" placeholder="200000">
               </div>
-              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary" id="submit">Submit</button>
           </div>
           <div class="datatool panel panel-default">
             <div class="panel-heading"><h4>Current Employees</h4></div> 
@@ -43,6 +48,8 @@
               </thead>
             </table>
         </div>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script  src="./assets/javascript/file.js"></script>      
           
      
 
