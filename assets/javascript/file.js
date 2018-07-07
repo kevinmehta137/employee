@@ -6,6 +6,7 @@ var rate=$("rate").val();
 console.log(name);
 console.log(role);
 console.log(rate);
+console.log("one");
 
 // on click
 $(".submit").on("click",function (){
