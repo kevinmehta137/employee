@@ -3,13 +3,16 @@
 
 <head></head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/css/style.css">
 <body>
-<div class="jumbotron" style="background-color:black; color: white;">
-        <h1>Employee Data Management </h1>
-        <h2>A Comprehensive Directory of Employee Billable Hours</h2>
+<div class="datatool jumbotron" style="background-color:black; color: white;">
+      <div class="head">
+          <h1>Employee Data Management </h1>
+          <h2>A Comprehensive Directory of Employee Billable Hours</h2>
       </div>
+    </div>
 
-      <div class="panel panel-default">
+      <div class="datatool panel panel-default ">
             <div class="panel-heading">Add Employee</div> <br>
             <div class="form-group">
               <label for="name">Employee Name</label>
@@ -23,9 +26,24 @@
                 <label for="rate">Monthly Rate</label>
                 <input type="rate" class="form-control" id="rate" placeholder="200000">
               </div>
+              <button type="button" class="btn btn-primary">Submit</button>
           </div>
-          <button type="button" class="submit btn btn-primary">Submit</button>
-          <span class="test"></span>
+          <div class="datatool panel panel-default">
+            <div class="panel-heading">Current Employees</div> 
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Employee Name</th>
+                  <th>Role</th>
+                  <th>Start Date</th>
+                  <th>Months Worked</th>
+                  <th>Monthly Rate ($)</th>
+                  <th>Total Billed ($)</th>
+                </tr>
+              </thead>
+            </table>
+        </div>
+          
      
 
 </body><script src="assets/javascript/file.js">
