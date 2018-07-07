@@ -1,16 +1,14 @@
-// variables for clicks
-var submitButton =$(".submit");
-var name=$("#name").val();
-var role=$("#role").val();
-var rate=$("rate").val();
-console.log(name);
-console.log(role);
-console.log(rate);
-console.log("one");
 
 // on click
-$(".submit").on("click",function (){
-    $("#test").text(name);
-    console.log(role+rate+name);
+$(".submit").on("click",function(event){
+    event.preventDefault();
+    var name=$("#name").val();
+    var role=$("#role").val();
+    var rate=$("#rate").val();
+    var dataObject={
+        name:name,
+        role:role,
+        rate:rate,}
+    console.log(dataObject);
 
 });
